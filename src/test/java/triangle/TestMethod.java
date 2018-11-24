@@ -8,6 +8,9 @@ import java.util.Iterator;
 
 /**
  * Created by Raik Yauheni on 24.11.2018.
+ *
+ * This is main class for testing class Triangle. It is provided common DataProviders and methods.
+ * Testing specific  methods of the class Triangle are performed from specific classes-children.
  */
 public class TestMethod {
     @DataProvider(name = "dP_IllegalTriangle")

@@ -52,7 +52,6 @@ public class TestMethod_detectTriangle extends TestMethod {
         Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
         triangle.detectTriangle();
     }
-
     /** negative test, prohibiting of using parameters with big
      *  difference between them, because double has limited precision.
      */
@@ -61,39 +60,6 @@ public class TestMethod_detectTriangle extends TestMethod {
     public  void testTooBigParams (ArrayList<Double> sizes) {
         new Triangle(sizes.get(0),sizes.get(1), sizes.get(2)).detectTriangle();
     }
-
-
-//    /** negative test, double's overflow */
-//    @DataProvider(name = "dP_DoubleOverFlow")
-//    public Iterator<Object[]> doubeOverFlow() {
-//        return Arrays.asList(new Object[][]
-//                {
-//                        { new ArrayList<Double>(Arrays.asList(Math.sqrt(Double.MAX_VALUE),Math.sqrt(Double.MAX_VALUE), 1e300)) },
-////                        { new ArrayList<Double>(Arrays.asList(-1.0, 1.0, 1.0)) },
-////                        { new ArrayList<Double>(Arrays.asList(-1.0, 1.0, 1.0)) },
-////                        { new ArrayList<Double>(Arrays.asList(-1.0, 1.0, 1.0)) },
-////                        { new ArrayList<Double>(Arrays.asList(-1.0, 1.0, 1.0)) },
-////                        { new ArrayList<Double>(Arrays.asList(-1.0, 1.0, 1.0)) },
-////                        { new ArrayList<Double>(Arrays.asList(-1.0, 1.0, 1.0)) },
-//
-//
-//                }).iterator();
-//    }
-//
-//      @Test(dataProvider = "dP_DoubleOverFlow")
-//    public void testDoubleOverFlow(List<Double> sizes){
-//        String errorMessage = "parameter(s) is(are) too big";
-//        Collections.sort(sizes);
-//        Assert.assertTrue(sizes.get(2)*sizes.get(2) < Double.MAX_VALUE, errorMessage);
-//        Assert.assertTrue(sizes.get(1)*sizes.get(1) < Double.MAX_VALUE - sizes.get(0)*sizes.get(0), errorMessage);
-//    }
-//
-
-
-
-
-
-
 }
 
 

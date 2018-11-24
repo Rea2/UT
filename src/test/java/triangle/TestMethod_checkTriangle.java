@@ -3,11 +3,7 @@ package triangle;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
 
 /**
  * Created by Raik Yauheni on 23.11.2018.
@@ -47,7 +43,6 @@ public class TestMethod_checkTriangle extends TestMethod {
     /** negative test*/
     @Test(dataProvider = "dP_IllegalTriangle", dataProviderClass = TestMethod.class)
     public  void testCheckingParamsNegative(double[] sides , boolean isTriangle) {
-        System.out.println(sides[0] + " " + sides[1]+ " " +sides[2]);
         Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
         Assert.assertEquals(triangle.checkTriangle(), isTriangle, "incorrect checking of the triangle.Negative test");
     }
