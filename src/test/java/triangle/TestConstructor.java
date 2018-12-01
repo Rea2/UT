@@ -25,12 +25,10 @@ public class TestConstructor {
                     { new ArrayList<Double>(Arrays.asList(1.0, 1.0, 1.0)) },
         }).iterator();
     }
-    @Test(dataProvider = "dP_Constructor")
+    @Test(dataProvider = "dP_Constructor", groups ="smoke")
     public  void testTooBigParams (ArrayList<Double> sizes) {
         messageTriangle = new Triangle(sizes.get(0), sizes.get(1), sizes.get(2)).getMessage();
         Assert.assertTrue(messageTriangle.equals(EXPECTED_MESSAGE_TRIANGLE));
 
     }
-
-
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Triangle" parallel="false">
+    <test name="Smoke_test">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="triangle.*"/>
+        </packages>
+    </test>
+</suite>
+
