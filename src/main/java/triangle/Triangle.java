@@ -98,7 +98,7 @@ public class Triangle {
 			return final_state; // комбинация признаков
 		}	
 	}
-
+	
 
 	public double getSquare()
 	{

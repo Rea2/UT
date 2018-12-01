@@ -1,6 +1,5 @@
 package runner;
 
-
 import triangle.Triangle;
 
 public class Main {
