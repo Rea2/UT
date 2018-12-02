@@ -54,11 +54,12 @@ public class TestMethod_checkTriangle {
             {new double[]{1, -1, 1}, false},
             {new double[]{-1, 1, -1}, false},
             {new double[]{1, -1, -1}, false},
-            /** one of sides equals zero */
+            /** one or more of sides equals zero */
             {new double[]{0, 1, 1}, false},
             {new double[]{1, 0, 1}, false},
             {new double[]{1, 1, 0}, false},
             {new double[]{-1, 1, 0}, false},
+            {new double[]{0, 0, 0}, false},
             /** the sum of the two sides is less than the third one */
             {new double[]{1, 2, 4}, false},
             {new double[]{4, 1, 2}, false},
